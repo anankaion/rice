@@ -8,9 +8,16 @@ export LFS=/mnt/lfs
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# ls stuff
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -la'
+
+# starting LFS stuff with one command
+alias startlfs='sudo bash /home/sus/Scripts/LFS/start.sh'
+alias stoplfs='sudo bash /home/sus/Scripts/LFS/stop.sh'
+
+alias sudo='sudo '
 
 PS1='[\u@\h \W]\$ '
