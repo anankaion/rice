@@ -25,5 +25,6 @@ alias sudo='sudo '
 
 # common programms shortend
 alias n='nnn'
+alias dic='sdcv'
 
 PS1='[\u@\h \W]\$ '
