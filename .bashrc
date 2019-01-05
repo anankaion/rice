@@ -27,4 +27,9 @@ alias sudo='sudo '
 alias n='nnn'
 alias dic='sdcv'
 
+# open config files simple
+alias i3conf='vim .config/i3/config'
+alias polybarconf='vim .config/polybar/config'
+alias termiteconf='vim .config/termite/config'
+
 PS1='[\u@\h \W]\$ '
