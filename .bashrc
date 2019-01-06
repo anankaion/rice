@@ -26,6 +26,7 @@ alias sudo='sudo '
 # common programms shortend
 alias n='nnn'
 alias dic='sdcv'
+alias start='bash ~/Scripts/startup.sh'
 
 # open config files simple
 alias i3conf='vim .config/i3/config'
