@@ -2,8 +2,10 @@
 # ~/.bashrc
 #
 
-# variable for lfs system
+# variable 
 export LFS=/mnt/lfs
+export FILMF=~/Mount/Festplatte/Filme/Watch
+export FILML=~/Videos/Filme
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -31,6 +33,7 @@ alias ufestplatte='sudo umount -v ~/Mount/Festplatte'
 alias n='nnn'
 alias dic='sdcv'
 alias start='bash ~/Scripts/startup.sh'
+alias upgrade='sudo pacman -Syu'
 
 # open config files simple
 alias i3conf='vim ~/.config/i3/config'
