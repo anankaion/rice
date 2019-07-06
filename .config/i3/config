@@ -182,3 +182,6 @@ mode "gaps_inner" {
 
 		bindsym Escape mode "default"
 }
+
+# Prevent mouse follow
+focus_follows_mouse no

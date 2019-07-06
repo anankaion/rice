@@ -1,4 +1,4 @@
 #!bin/sh
 
-feh --bg-scale ~/Pictures/Wallpaper/winter_street.png
+feh --bg-fill ~/Pictures/Wallpaper/church_burning1.jpg
 compton &

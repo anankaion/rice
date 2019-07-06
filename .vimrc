@@ -23,6 +23,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-surround'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
 
 call vundle#end()
 filetype plugin indent on
