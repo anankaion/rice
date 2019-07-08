@@ -31,8 +31,8 @@ alias ufestplatte='sudo umount -v ~/Mount/Festplatte'
 
 # common programms shortend
 alias n='nnn'
-alias dic='sdcv'
 alias start='bash ~/Scripts/startup.sh'
+alias m='ncmpcpp'
 alias upgrade='sudo pacman -Syu'
 
 # open config files simple
