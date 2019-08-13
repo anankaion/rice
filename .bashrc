@@ -4,8 +4,6 @@
 
 # variable 
 export LFS=/mnt/lfs
-export FILMF=~/Mount/Festplatte/Filme/Watch
-export FILML=~/Videos/Filme
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -26,8 +24,12 @@ alias stoplfs='sudo bash /home/sus/Scripts/LFS/stop.sh'
 alias sudo='sudo '
 
 # mounting
-alias festplatte='sudo mount -v /dev/sdd1 ~/Mount/Festplatte'
+alias festplatte='sudo mount -v /dev/sdc2 ~/Mount/Festplatte'
 alias ufestplatte='sudo umount -v ~/Mount/Festplatte'
+
+# dhcp
+alias internet='sudo systemctl start dhcpcd@enp3s0.service'
+alias ninternet='sudo systemctl stop dhcpcd@enp3s0.service'
 
 # common programms shortend
 alias n='nnn'
