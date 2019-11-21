@@ -29,7 +29,7 @@ alias ufestplatte='sudo umount -v ~/Mount/Festplatte'
 
 # dhcp
 alias internet='sudo systemctl start dhcpcd@enp3s0.service'
-alias ninternet='sudo systemctl stop dhcpcd@enp3s0.service'
+alias rinternet='sudo systemctl restart dhcpcd@enp3s0.service'
 
 # common programms shortend
 alias n='nnn'
