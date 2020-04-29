@@ -24,8 +24,8 @@ alias stoplfs='sudo bash /home/sus/Scripts/LFS/stop.sh'
 alias sudo='sudo '
 
 # mounting
-alias festplatte='sudo mount -v /dev/sdc2 ~/Mount/Festplatte'
-alias ufestplatte='sudo umount -v ~/Mount/Festplatte'
+alias festplatte='sudo mount -v /dev/sdc2 ~/Mount'
+alias ufestplatte='sudo umount -v ~/Mount'
 
 # dhcp
 alias internet='sudo systemctl start dhcpcd@enp3s0.service'
@@ -41,5 +41,8 @@ alias upgrade='sudo pacman -Syu'
 alias i3conf='vim ~/.config/i3/config'
 alias polybarconf='vim ~/.config/polybar/config'
 alias termiteconf='vim ~/.config/termite/config'
+
+# weather
+alias weather='curl wttr.in/Thomasroith'
 
 PS1='[\u@\h \W]\$ '
