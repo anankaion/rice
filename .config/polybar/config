@@ -59,7 +59,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = 
+modules-center = mpd
 modules-right = filesystem memory cpu eth date 
 
 tray-position = right
@@ -174,16 +174,22 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <label-song>    <bar-progress>    <label-time>
+; format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
 icon-prev = 
-icon-stop = 
-icon-play = 
+icon-stop = s
+icon-play = play
 icon-pause = 
 icon-next = 
 
 label-song-maxlen = 25
 label-song-ellipsis = true
+
+bar-progress-width = 45
+bar-progress-indicator = | 
+bar-progress-fill = ─
+bar-progress-empty = ─
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -250,10 +256,10 @@ type = internal/network
 interface = enp3s0
 interval = 3.0
 
+format-connected = <label-connected>
 format-connected-underline = #55aa55
-format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = %local_ip% 
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -265,7 +271,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = "%d.%m"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
