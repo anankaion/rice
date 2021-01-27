@@ -4,6 +4,8 @@
 
 # variable 
 export LFS=/mnt/lfs
+export WORK=~/Documents/Studium/Hermeneutik/Abgaben/Essay
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -28,21 +30,19 @@ alias festplatte='sudo mount -v /dev/sdc2 ~/Mount'
 alias ufestplatte='sudo umount -v ~/Mount'
 
 # dhcp
-alias internet='sudo systemctl start dhcpcd@enp3s0.service'
-alias rinternet='sudo systemctl restart dhcpcd@enp3s0.service'
+alias internet='sudo systemctl start dhclient@enp3s0.service'
+alias rinternet='sudo systemctl restart dhclient@enp3s0.service'
 
 # common programms shortend
 alias n='nnn'
 alias start='bash ~/Scripts/startup.sh'
 alias m='ncmpcpp'
 alias upgrade='sudo pacman -Syu'
+alias uppo='upgrade && poweroff'
 
 # open config files simple
 alias i3conf='vim ~/.config/i3/config'
 alias polybarconf='vim ~/.config/polybar/config'
 alias termiteconf='vim ~/.config/termite/config'
-
-# weather
-alias weather='curl wttr.in/Thomasroith'
 
 PS1='[\u@\h \W]\$ '
